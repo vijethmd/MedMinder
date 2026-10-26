@@ -1,0 +1,53 @@
+name: med_minder
+description: Smart Medication Reminder App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Local notifications
+  flutter_local_notifications: ^17.2.4
+  
+  # Device timezone lookup
+  flutter_timezone: ^5.0.2
+
+  # Timezone support
+  timezone: ^0.9.4
+  
+  # Local storage for meal times
+  shared_preferences: ^2.2.2
+
+  # Local database
+  sqflite: ^2.3.0
+  path: ^1.9.0
+
+  # Date formatting
+  intl: ^0.19.0
+
+  # Background alarm that ends a medicine course
+  android_alarm_manager_plus: ^5.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # App logo shown inside the app (the alarm sound lives in android/.../res/raw)
+  assets:
+    - assets/images/
+
+  # Easy-to-read font bundled with the app, so nothing is downloaded
+  fonts:
+    - family: AtkinsonHyperlegible
+      fonts:
+        - asset: assets/fonts/AtkinsonHyperlegible-Regular.ttf
+        - asset: assets/fonts/AtkinsonHyperlegible-Bold.ttf
+          weight: 700

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These are only referenced by name from Dart, so stop release builds
+     from stripping them as "unused" -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/ic_stat_medminder,@raw/medminder_chime" />
